@@ -1,0 +1,26 @@
+<label> Your Name (required)
+    [text* your-name] </label>
+
+<label> Your Email (required)
+    [email* your-email] </label>
+
+<label> Subject
+    [text your-subject] </label>
+
+<label> Your Education
+    [textarea your-Education] </label>
+
+<label> Your Experience
+    [select* your-Experience use_label_element default:1 "Sales" "Marketing" "Customer Support"] </label>
+
+<label> Upload your CV
+    [file ResumeCV limit:55000 filetypes:doc|docx|pdf] </label>
+
+
+Input this code: [captcha captcha-170 fg:#ffffff bg:#000000]
+[captchar captcha-170 4/4]
+
+[submit "Send"]
+
+
+
