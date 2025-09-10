@@ -1,0 +1,15 @@
+
+Select Country (required)
+[checkbox* your-country use_label_element "China" "India" "San Marino"]
+
+Select Sports
+[radio your-sports label_first default:2 "Football" "Tennis" "Pole-vault"]
+
+Select Fruit (required)
+[checkbox* your-fruit exclusive "Apple" "Banana" "Grape"]
+
+Select Browser (required)
+[select* your-browser include_blank "Firefox" "Safari" "Opera" "Lynx"]
+
+Select Color's
+[select your-colors multiple "red" "Black" "Blue"]
