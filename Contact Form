@@ -81,6 +81,10 @@ size:40px;
                     </div>
                 </div>
             </div>
+
+Input this code: [captchac captcha-778 size:s fg:#ffffff bg:#000000]
+[captchar captcha-778 4/4]
+
             
             <div class="form-row">
                 <div class="form-group full-width" style="text-align: center;">
