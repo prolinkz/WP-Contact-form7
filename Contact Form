@@ -18,6 +18,8 @@
 
 #text-688{
      width: 80px;
+border: 2px solid ##f59e0b;
+size:40px;
 }
         
         .submit-btn:hover {
