@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form 7 Styled</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: #4b6cb7;
+            color: white;
+            padding: 25px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            padding: 30px;
+        }
+        
+        .form-row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px 20px;
+        }
+        
+        .form-group {
+            padding: 0 15px;
+            margin-bottom: 20px;
+            flex: 1 0 calc(50% - 30px);
+            min-width: 250px;
+        }
+        
+        .full-width {
+            flex: 1 0 calc(100% - 30px);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        input, textarea, select {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            border-color: #4b6cb7;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(75, 108, 183, 0.2);
+        }
+        
+        .math-field {
+            max-width: 200px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        button {
+            background: #4b6cb7;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            display: block;
+            margin: 20px auto 0;
+            min-width: 200px;
+            font-weight: 600;
+        }
+        
+        button:hover {
+            background: #3a5999;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            border-left: 4px solid #4b6cb7;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .instructions h3 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .instructions ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .instructions li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            .form-group {
+                flex: 1 0 calc(100% - 30px);
+            }
+            
+            .math-field {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+            <p>We'd love to hear from you! Send us a message.</p>
+        </div>
+        
+        <div class="form-container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="your-name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="your-name" name="your-name" required placeholder="Enter your full name here" size="50">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="your-tel">Telephone <span class="required">*</span></label>
+                        <input type="tel" id="your-tel" name="your-tel" required placeholder="123-456-7890" size="50">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="your-email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="your-email" name="your-email" required placeholder="Enter your email address here" autocomplete="email">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="your-subject">Subject <span class="required">*</span></label>
+                        <input type="text" id="your-subject" name="your-subject" required placeholder="Enter your Subject">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group full-width">
+                        <label for="your-message">Your Message</label>
+                        <textarea id="your-message" name="your-message" placeholder="Your message"></textarea>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="text-688">What is 2+2=? <span class="required">*</span></label>
+                        <input type="text" id="text-688" name="text-688" required placeholder="What is 2+2=?" class="math-field">
+                    </div>
+                </div>
+                
+                <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+            </form>
+            
+            <div class="instructions">
+                <h3><i class="fas fa-info-circle"></i> Mail Configuration Instructions</h3>
+                <p>For this form to work properly in Contact Form 7, make sure to configure the Mail tab with these settings:</p>
+                <ul>
+                    <li><strong>To:</strong> Your email address</li>
+                    <li><strong>From:</strong> [your-email]</li>
+                    <li><strong>Subject:</strong> [your-subject]</li>
+                    <li><strong>Additional Headers:</strong> Reply-To: [your-email]</li>
+                    <li><strong>Message Body:</strong> Include all form fields ([your-name], [your-tel], etc.)</li>
+                </ul>
+                <p>Also set up the spam filtering to validate the "What is 2+2=?" field to only accept "4".</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
